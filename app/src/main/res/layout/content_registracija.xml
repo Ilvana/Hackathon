@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#A6BBD4"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_registracija" tools:context="com.elmana.hackathon.Registracija">
+
+    <ListView
+        android:layout_width="300px"
+        android:layout_height="800px"
+        android:id="@+id/listView"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:text="Scan Bluetooth Devices"
+        android:id="@+id/button3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="Scan"
+        android:background="#2B80AE"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        />
+
+
+</RelativeLayout>
